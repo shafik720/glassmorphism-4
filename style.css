@@ -14,14 +14,14 @@ body{
 
 section{
     position: relative;
-    background: #899878;
+    background: #222725;
     width: 1200px;
 }
 
 section::before{
     position: absolute;
     content: '';
-    background: linear-gradient(blue,#e81cff);
+    background: linear-gradient(#6eee87,#5fc52e);
     top: 0; 
     bottom: 0;
     left: 0;
@@ -113,6 +113,7 @@ section::after{
     transform: translateY(50px);
     opacity: 0;
     transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
 }
 .container .card:hover .icons li{
     transform: translateY(0px);
@@ -124,7 +125,6 @@ section::after{
 }
 .container .card .icons li #icon2{
     font-size: 40px;
-
 }
 .container .card .icons li #icon1:hover{
     color: #257F4E;

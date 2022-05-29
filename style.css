@@ -10,18 +10,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #354F52;
 }
 
 section{
     position: relative;
-    background: #222725;
+    background: rgba(34, 39, 37, 0.568);
     width: 1200px;
+    border-radius: 15px;
 }
 
 section::before{
     position: absolute;
     content: '';
-    background: linear-gradient(#6eee87,#5fc52e);
+    background: linear-gradient(#2BE973,#257448);
     top: 0; 
     bottom: 0;
     left: 0;
@@ -31,7 +33,8 @@ section::before{
 section::after{
     position: absolute;
     content: '';
-    background: linear-gradient(#1dbde6,#f1515e);
+    background: linear-gradient(90deg, rgb(187, 145, 53) 0%, hsla(7, 76%, 47%, 1) 100%);
+
     top: 0;
     bottom: 0;
     left: 0;
@@ -53,23 +56,28 @@ section::after{
     justify-content: center;
     align-items: center;
     width: 320px;
-    height: 450px;
+    height: 480px; 
     background: rgba(34, 166, 242, 0.25);
-    opacity: 0.5;
-    backdrop-filter: blur(10px);
-    transition: 0.5s;
+    backdrop-filter: blur(50px);
+    transition: 0.5s ;
     margin: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 .container .card:hover{
-    opacity: 1;
+    transform: translateY(-50px);
 }
 .container .card .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    opacity: 1;
+
 }
 .container .card .content .contentImg{
     width: 100px;
@@ -81,7 +89,7 @@ section::after{
     transition: 1s;
 }
 .container .card:hover .content .contentImg{
-    border: 10px solid rgba(0, 0, 0, 0.8);
+    border: 10px solid rgba(117, 11, 11, 0.8);
 }
 .container .card .content .contentImg img{
     position: absolute;
@@ -120,7 +128,7 @@ section::after{
     opacity: 1;
 }
 .container .card .icons li a{
-    color: white;
+    color: #61B6C8;
     font-size: 30px;
 }
 .container .card .icons li #icon2{
